@@ -1,37 +1,105 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en">
+<head>
 
-You can use the [editor on GitHub](https://github.com/nthayer1/nthayer1.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+	<meta charset="UTF-8">
+	<title>Live Chat</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
 
-### Markdown
+</head>
+<body>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	<div id="live-chat">
+		
+		<header class="clearfix">
+			
+			<a href="#" class="chat-close">x</a>
 
-```markdown
-Syntax highlighted code block
+			<h4>John Doe</h4>
 
-# Header 1
-## Header 2
-### Header 3
+			<span class="chat-message-counter">3</span>
 
-- Bulleted
-- List
+		</header>
 
-1. Numbered
-2. List
+		<div class="chat">
+			
+			<div class="chat-history">
+				
+				<div class="chat-message clearfix">
+					
+					<img src="http://lorempixum.com/32/32/people" alt="" width="32" height="32">
 
-**Bold** and _Italic_ and `Code` text
+					<div class="chat-message-content clearfix">
+						
+						<span class="chat-time">13:35</span>
 
-[Link](url) and ![Image](src)
-```
+						<h5>John Doe</h5>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, explicabo quasi ratione odio dolorum harum.</p>
 
-### Jekyll Themes
+					</div> <!-- end chat-message-content -->
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nthayer1/nthayer1.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+				</div> <!-- end chat-message -->
 
-### Support or Contact
+				<hr>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+				<div class="chat-message clearfix">
+					
+					<img src="http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32" alt="" width="32" height="32">
+
+					<div class="chat-message-content clearfix">
+						
+						<span class="chat-time">13:37</span>
+
+						<h5>Marco Biedermann</h5>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nulla accusamus magni vel debitis numquam qui tempora rem voluptatem delectus!</p>
+
+					</div> <!-- end chat-message-content -->
+
+				</div> <!-- end chat-message -->
+
+				<hr>
+
+				<div class="chat-message clearfix">
+					
+					<img src="http://lorempixum.com/32/32/people" alt="" width="32" height="32">
+
+					<div class="chat-message-content clearfix">
+						
+						<span class="chat-time">13:38</span>
+
+						<h5>John Doe</h5>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+					</div> <!-- end chat-message-content -->
+
+				</div> <!-- end chat-message -->
+
+				<hr>
+
+			</div> <!-- end chat-history -->
+
+			<p class="chat-feedback">Your partner is typing…</p>
+
+			<form action="#" method="post">
+
+				<fieldset>
+					
+					<input type="text" placeholder="Type your message…" autofocus>
+					<input type="hidden">
+
+				</fieldset>
+
+			</form>
+
+		</div> <!-- end chat -->
+
+	</div> <!-- end live-chat -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	
+</body>
+</html>
